@@ -5,7 +5,7 @@ import Login from "./components/login/Login";
 import Signup from "./components/signup/Signup";
 import Main from "./pages/main";
 
-let App = () => {
+export default function App() {
   return (
     <div className="App">
       <Routes>
@@ -15,6 +15,4 @@ let App = () => {
       </Routes>
     </div>
   );
-};
-
-export default App;
+}

@@ -1,9 +1,9 @@
 [
   {
     "id": 15,
-    "header": "10 microservices design patterns for better architecture",
-    "content": "patterns provide tried-and-true fundamental building blocks that can help write code for microservices. By utilizing patterns during the development process, you save time and ensure a higher level of accuracy versus writing code for your microservices app from scratch. In this article, we cover a comprehensive overview of 10 microservices design patterns you need to know, as well as when to apply kjk",
-    "base64img": "tg"
+    "header": " Before you start: How to start a blog?",
+    "content": "Before you start writing your blog post, make sure you have a clear understanding of your target audience. To do so, take the following steps.",
+    "base64img": "./content/LP_Photo_Family.jpg"
   },
   {
     "id": 13,
@@ -13,6 +13,12 @@
   },
   {
     "id": 16,
+    "header": "Setting up mock inserts",
+    "content": "we are inserting the row instead of using existing data is because data is subject to change and this test is not to ensure whether the data exists or not, but to check the functionality of the insert and the return value of the function. You can also insert multiple rows using a loop, if you want to test multiple rows insert scenario.",
+    "base64img": ""
+  },
+  {
+    "id": 17,
     "header": "Setting up mock inserts",
     "content": "we are inserting the row instead of using existing data is because data is subject to change and this test is not to ensure whether the data exists or not, but to check the functionality of the insert and the return value of the function. You can also insert multiple rows using a loop, if you want to test multiple rows insert scenario.",
     "base64img": ""

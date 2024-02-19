@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";
 import { Badge } from "primereact/badge";
 import { Avatar } from "primereact/avatar";
+import { useNavigate } from "react-router-dom";
+import "./NavigationBar.css";
 
 export default function NavigationBar() {
   const itemRenderer = (item) => (
@@ -17,6 +19,8 @@ export default function NavigationBar() {
       )}
     </a>
   );
+  const [isLogin, setIsLogin] = useState(false);
+  const navigate = useNavigate();
 
   const items = [
     {
@@ -48,7 +52,15 @@ export default function NavigationBar() {
       ],
     },
   ];
-
+  function handleClick() {
+    console.log("clicked");
+    if (!isLogin) {
+      console.log("false");
+      navigate("/login");
+    } else {
+      navigate("/");
+    }
+  }
   const start = (
     <img alt="logo" src="micro-dot-blog.svg" height="40" className="mr-2"></img>
   );
@@ -62,6 +74,7 @@ export default function NavigationBar() {
       <Avatar
         image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
         shape="circle"
+        onClick={handleClick}
       />
     </div>
   );

@@ -24,13 +24,13 @@ export default function CarouselPostTemplate(product) {
       <div className="mb-3">
         <img
           src={`https://primefaces.org/cdn/primereact/images/product/${product.image}`}
-          alt={product.name}
+          alt={product.image}
           className="w-6 shadow-2"
         />
       </div>
       <div>
         <h4 className="mb-1">{product.header}</h4>
-        <h6 className="mt-0 mb-3">${product.price}</h6>
+        <h6 className="mt-0 mb-3">{product.content}</h6>
         <Tag
           value={product.inventoryStatus}
           severity={getSeverity(product)}

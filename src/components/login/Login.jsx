@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Checkbox } from "primereact/checkbox";
 import { Button } from "primereact/button";
+import { useNavigate } from "react-router-dom";
 
-let login = () => {
+export default function Login() {
+  const navigate = useNavigate();
+  function handleCreateClick() {
+    navigate("/signup");
+  }
   return (
     <div className="flex align-items-center justify-content-center">
       <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
         <div className="text-center mb-5">
           <img
-            src="/demo/images/blocks/logos/hyper.svg"
-            alt="hyper"
+            alt="logo"
+            src="micro-dot-blog.svg"
             height={50}
             className="mb-3"
           />
@@ -18,7 +23,10 @@ let login = () => {
           <span className="text-600 font-medium line-height-3">
             Don't have an account?
           </span>
-          <a className="font-medium no-underline ml-2 text-blue-500 cursor-pointer">
+          <a
+            className="font-medium no-underline ml-2 text-blue-500 cursor-pointer"
+            onClick={handleCreateClick}
+          >
             Create today!
           </a>
         </div>
@@ -59,6 +67,4 @@ let login = () => {
       </div>
     </div>
   );
-};
-
-export default login;
+}
