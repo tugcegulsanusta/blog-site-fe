@@ -1,0 +1,8 @@
+.custom-button {
+    background-color: #6c757d; /* Koyu gri tonu */
+    color: #fff; /* Yazı rengi */
+    border-color: #6c757d; /* Kenarlık rengi */
+  }
+  .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+    background: #413e3f !important;
+}

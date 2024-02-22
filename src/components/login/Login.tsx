@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 
 export default function Login() {
   const navigate = useNavigate();
+  const [checked, setChecked] = useState<boolean>(false);
   function handleCreateClick() {
     navigate("/signup");
   }
@@ -65,7 +66,7 @@ export default function Login() {
 
             <div className="flex align-items-center justify-content-between mb-6">
               <div className="flex align-items-center">
-                <Checkbox id="rememberme" className="mr-2" />
+                <Checkbox onChange={e => setChecked(true)} checked={checked}></Checkbox>
                 <label htmlFor="rememberme">Remember me</label>
               </div>
               <a className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">

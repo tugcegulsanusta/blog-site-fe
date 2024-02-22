@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 
-export default function Category() {
+export default function AddCategoryPopUp() {
   const [value, setValue] = useState("");
 
   return (
@@ -18,7 +18,7 @@ export default function Category() {
           placeholder="Kategori Adı"
         />
       </div>
-      <div className="card flex justify-content-center">
+      <div className="card" style={{ margin: "2rem auto", color: "gray" }}>
         <Button label="Ekle" />
       </div>
     </>

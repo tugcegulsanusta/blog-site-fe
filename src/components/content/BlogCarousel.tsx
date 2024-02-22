@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "primereact/carousel";
 import blogItems from "./blogItems.json";
-import CarouselPostTemplate from "./CarouselPostTemplate";
+import CarouselPostTemplate from "./CarouselPostTemplate.tsx";
 
 export default function BlogCarousel() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(blogItems);
 
   const responsiveOptions = [
     {
@@ -32,7 +32,7 @@ export default function BlogCarousel() {
   useEffect(() => {
     setProducts(blogItems);
   }, []);
-
+  
   return (
     <div className="card">
       <Carousel
@@ -41,6 +41,8 @@ export default function BlogCarousel() {
         numScroll={3}
         responsiveOptions={responsiveOptions}
         itemTemplate={CarouselPostTemplate}
+        color="light"
+        className="custom-carousel"
       />
     </div>
   );
