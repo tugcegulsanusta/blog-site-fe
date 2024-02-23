@@ -8,7 +8,7 @@ export default function CarouselPostTemplate(product) {
       style={{
         width: "450px",
         height: "400px",
-        margin: "10px",
+        margin: "1px",
         overflow: "hidden",
       }}
     >
@@ -16,7 +16,7 @@ export default function CarouselPostTemplate(product) {
         className="border-2 border-round h-full text-center p-3"
         style={{ borderColor: "#B4B4B8", overflow: "hidden" }}
       >
-        <div className="mb-3">
+        <div className="mb-2">
           <img
             src={`https://primefaces.org/cdn/primereact/images/product/${product.base64img}`}
             alt={product.base64img}

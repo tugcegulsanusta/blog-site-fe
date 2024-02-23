@@ -1,0 +1,37 @@
+.file-upload{
+    margin: 2%;
+    justify-content: flex-start;
+}
+.container{
+    justify-content: center;
+}
+
+.p-button{
+    color: whitesmoke;
+    background: var(--bluegray-400);
+    border: var(--bluegray-400);
+}
+.p-button-label p-clickable{
+}
+.add-photo{
+    margin: 1%;
+}
+.p-2{
+    margin: 1%;
+}
+.text{
+    margin: 1%;
+}
+.create-button{
+ margin: 1%;
+ float: left;
+}
+.d-block{
+    margin: 1%;
+}
+.input-header{
+    margin: 1%;
+}
+.p-inputtextarea p-inputtext p-component{
+    border-shadow: none;
+}

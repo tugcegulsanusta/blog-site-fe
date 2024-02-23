@@ -6,3 +6,9 @@
   .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
     background: #413e3f !important;
 }
+.p-carousel[pr_id_6] .p-carousel-item {
+  flex: 1 0 80%;
+}
+.card{
+  justify-content: center;
+}

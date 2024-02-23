@@ -42,7 +42,6 @@ export default function BlogCarousel() {
         responsiveOptions={responsiveOptions}
         itemTemplate={CarouselPostTemplate}
         color="light"
-        className="custom-carousel"
       />
     </div>
   );

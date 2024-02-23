@@ -4,7 +4,9 @@ import Login from "./components/login/Login.tsx";
 import Signup from "./components/signup/Signup.tsx";
 import Main from "./pages/main.tsx";
 import AddCategoryPopUp from "./components/category/AddCategoryPopUp.tsx";
-import Categorystatisticspage from "./pages/categorystatisticspage.tsx";
+import CategoryStatisticsPage from "./pages/categorystatisticspage.tsx";
+import AddPostPage from "./pages/AddPostPage.tsx";
+import UpdatePostPage from "./pages/UpdatePostPage.tsx";
 
 export default function App() {
   return (
@@ -14,7 +16,9 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/addCategory" element={<AddCategoryPopUp />} />
-        <Route path="/statistics" element={<Categorystatisticspage/>}/>
+        <Route path="/statistics" element={<CategoryStatisticsPage/>}/>
+        <Route path="/addPost" element={<AddPostPage/>}/>
+        <Route path="/updatePost" element={<UpdatePostPage/>}/>
       </Routes>
     </div>
   );

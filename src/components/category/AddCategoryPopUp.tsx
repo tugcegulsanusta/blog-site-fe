@@ -18,7 +18,7 @@ export default function AddCategoryPopUp() {
           placeholder="Kategori Adı"
         />
       </div>
-      <div className="card" style={{ margin: "2rem auto", color: "gray" }}>
+      <div className="card flex justify-content-center m-5">
         <Button label="Ekle" />
       </div>
     </>
