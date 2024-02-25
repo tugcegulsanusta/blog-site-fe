@@ -15,6 +15,20 @@ export default function NavigationBar() {
   const [updateCategoryDialog, setUpdateCategoryDialog] = useState(false);
   const [navItems, setNavItems] = useState([]);
 
+interface User{
+  id: string,
+  username: string,
+  email: string,
+  password: string,
+  authorities: string,
+  base64img: string
+}
+
+function handleUserAvatar(){
+  if(isLogin){
+  }
+}
+
   const items = [
     {
       label: "Anasayfa",
@@ -106,18 +120,19 @@ export default function NavigationBar() {
         className="w-8rem sm:w-auto"
       />
       <Avatar
-        image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
+        image= '../../../public/micro-dot-blog.svg'
         shape="circle"
         onClick={() => {
           if (!isLogin) {
             navigate("/login");
           } else {
-            navigate("/");
+            navigate("/user");
           }
         }}
       />
     </div>
   );
+
 
   return (
     <>

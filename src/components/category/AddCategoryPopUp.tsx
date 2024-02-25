@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
+import { createCategory } from '../../api/CategoryApi.tsx'
 
 export default function AddCategoryPopUp() {
   const [value, setValue] = useState("");
+
+  function handleClick() {
+    const x = createCategory(value);
+  }
 
   return (
     <>
@@ -19,7 +24,7 @@ export default function AddCategoryPopUp() {
         />
       </div>
       <div className="card flex justify-content-center m-5">
-        <Button label="Ekle" />
+        <Button label="Ekle" onClick={handleClick} />
       </div>
     </>
   );

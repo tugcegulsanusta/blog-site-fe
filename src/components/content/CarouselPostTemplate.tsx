@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "primereact/button";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CarouselPostTemplate(product) {
+  const navigate = useNavigate();
+  function handleClick(){
+    navigate("/post{id}")
+  }
   return (
     <div
       style={{
@@ -31,6 +36,7 @@ export default function CarouselPostTemplate(product) {
               icon="pi pi-link"
               rounded
               style={{ backgroundColor: "#6c757d", borderColor: "#6c757d" }}
+              onClick={handleClick}
             />
           </div>
         </div>

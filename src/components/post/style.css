@@ -31,7 +31,14 @@
 }
 .input-header{
     margin: 1%;
+    box-shadow: none;
 }
 .p-inputtextarea p-inputtext p-component{
-    border-shadow: none;
+    box-shadow: none;
+}
+.text-area{
+    box-shadow: none !important;
+}
+.d-block{
+    box-shadow: none !important;
 }

@@ -20,7 +20,7 @@ export default function AddPost() {
     <InputText placeholder="Gönderi Başlığını Giriniz" className='input-header' />
     <Button className="add-photo" label='Ftotoğraf Ekle' onClick={(e)=> setVisible(true)}/>
     <div>
-    <InputTextarea rows={10} cols={60} placeholder="İçerik Giriniz" />
+    <InputTextarea className= "text-area" rows={10} cols={60} placeholder="İçerik Giriniz" />
   </div>
 
   <div className='create-button'>

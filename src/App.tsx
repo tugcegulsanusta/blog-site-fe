@@ -7,6 +7,7 @@ import AddCategoryPopUp from "./components/category/AddCategoryPopUp.tsx";
 import CategoryStatisticsPage from "./pages/categorystatisticspage.tsx";
 import AddPostPage from "./pages/AddPostPage.tsx";
 import UpdatePostPage from "./pages/UpdatePostPage.tsx";
+import UserPage from "./pages/UserPage.tsx";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/statistics" element={<CategoryStatisticsPage/>}/>
         <Route path="/addPost" element={<AddPostPage/>}/>
         <Route path="/updatePost" element={<UpdatePostPage/>}/>
+        <Route path="/user" element={<UserPage/>}/>
       </Routes>
     </div>
   );

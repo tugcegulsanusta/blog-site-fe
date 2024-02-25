@@ -32,7 +32,7 @@ export default function BlogCarousel() {
   useEffect(() => {
     setProducts(blogItems);
   }, []);
-  
+
   return (
     <div className="card">
       <Carousel

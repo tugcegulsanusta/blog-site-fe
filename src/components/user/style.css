@@ -1,0 +1,26 @@
+*{
+    box-shadow: none !important;
+    border-color: rgb(164, 151, 151);
+}
+.change-name{
+    margin: 1%;
+    justify-items: center;
+}
+.change-password{
+    margin: 1%;
+}
+.change-profilePicture{
+    margin: 1%;
+    justify-items: center;
+}
+.saveButton{
+    margin: 1%;
+    float:initial
+}
+.container{
+    margin: 2%;
+ 
+}
+.input-text{
+    margin: 1%;
+}
