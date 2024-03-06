@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menubar } from "primereact/menubar";
 import { Avatar } from "primereact/avatar";
 import { InputText } from "primereact/inputtext";
@@ -6,6 +6,27 @@ import { useNavigate } from "react-router-dom";
 import { Dialog } from "primereact/dialog";
 import AddCategoryPopUp from "../category/AddCategoryPopUp.tsx";
 import DeleteCategoryPopUp from "../category/DeleteCategoryPopUp.tsx";
+import data from '../../jsonfiles/category.json';
+
+interface User {
+  id: string,
+  username: string,
+  email: string,
+  password: string,
+  authorities: string,
+  base64img: string
+}
+interface Category {
+  id: number;
+  name: string;
+}
+interface Post {
+  id: number;
+  header: string;
+  content: string;
+  categoryName: string;
+  base64img: string;
+}
 
 export default function NavigationBar() {
   const [isLogin, setIsLogin] = useState(false);
@@ -14,20 +35,35 @@ export default function NavigationBar() {
   const [deleteCategoryDialog, setDeleteCategoryDialog] = useState(false);
   const [updateCategoryDialog, setUpdateCategoryDialog] = useState(false);
   const [navItems, setNavItems] = useState([]);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]);
 
-interface User{
-  id: string,
-  username: string,
-  email: string,
-  password: string,
-  authorities: string,
-  base64img: string
-}
+  useEffect(() => {
+    const categoryData = [
+      { id: 1, name: "Teknoloji" },
+      { id: 2, name: "Bilim" },
+      { id: 3, name: "Sağlıklı Yaşam" },
+      { id: 4, name: "Seyahat" }
+    ];
+    setCategories(categoryData);
 
-function handleUserAvatar(){
-  if(isLogin){
+    const postsData = [
+      { id: 1, header: "Header 1", content: "Content 1", categoryName: "Teknoloji", base64img: "img1" },
+      { id: 2, header: "Header 2", content: "Content 2", categoryName: "Bilim", base64img: "img2" },
+      { id: 3, header: "Header 3", content: "Content 3", categoryName: "Sağlıklı Yaşam", base64img: "img3" },
+      { id: 4, header: "Header 4", content: "Content 4", categoryName: "Seyahat", base64img: "img4" },
+      { id: 5, header: "Header 5", content: "Content 5", categoryName: "Teknoloji", base64img: "img5" },
+      { id: 6, header: "Header 6", content: "Content 6", categoryName: "Bilim", base64img: "img6" }
+    ];
+    setPosts(postsData);
+  }, []);
+
+
+
+  function handleUserAvatar() {
+    if (isLogin) {
+    }
   }
-}
 
   const items = [
     {
@@ -85,26 +121,11 @@ function handleUserAvatar(){
     {
       label: "Kategoriler",
       icon: "pi pi-search",
-      items: [
-        {
-          label: "Core",
-          icon: "pi pi-bolt",
-          shortcut: "⌘+S",
-          command: () => navigate("/core"),
-        },
-        {
-          label: "Blocks",
-          icon: "pi pi-server",
-          shortcut: "⌘+B",
-          command: () => navigate("/blocks"),
-        },
-        {
-          label: "UI Kit",
-          icon: "pi pi-pencil",
-          shortcut: "⌘+U",
-          command: () => navigate("/ui-kit"),
-        },
-      ],
+      items: categories.map(category => ({
+        label: category.name,
+        icon: 'pi pi-folder',
+        command: () => navigate(`/category/${category.name.toLowerCase()}`)
+      }))
     },
   ];
 
@@ -120,7 +141,7 @@ function handleUserAvatar(){
         className="w-8rem sm:w-auto"
       />
       <Avatar
-        image= '../../../public/micro-dot-blog.svg'
+        image='../../../public/micro-dot-blog.svg'
         shape="circle"
         onClick={() => {
           if (!isLogin) {

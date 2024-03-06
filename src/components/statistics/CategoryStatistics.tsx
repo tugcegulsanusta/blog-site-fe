@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import './style.css'
 
 export default function CategoryStatistics() {
     const [chartData, setChartData] = useState({});
@@ -13,49 +11,55 @@ export default function CategoryStatistics() {
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
         const data = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            labels: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz'],
             datasets: [
                 {
-                    label: 'First Dataset',
-                    data: [65, 59, 80, 81, 56, 55, 40],
-                    fill: false,
-                    tension: 0.4,
-                    borderColor: documentStyle.getPropertyValue('--blue-500')
+                    label: 'Teknoloji',
+                    backgroundColor: documentStyle.getPropertyValue('--purple-400'),
+                    borderColor: documentStyle.getPropertyValue('--purple-300'),
+                    data: [80, 73, 80, 81, 56, 55, 40]
                 },
                 {
-                    label: 'Second Dataset',
-                    data: [28, 48, 40, 19, 86, 27, 90],
-                    fill: false,
-                    borderDash: [5, 5],
-                    tension: 0.4,
-                    borderColor: documentStyle.getPropertyValue('--blue-800')
+                    label: 'Bilim',
+                    backgroundColor: documentStyle.getPropertyValue('--blue-600'),
+                    borderColor: documentStyle.getPropertyValue('--blue-500'),
+                    data: [60, 48, 53, 62, 70, 55, 80]
                 },
                 {
-                    label: 'Third Dataset',
-                    data: [12, 51, 62, 33, 21, 62, 45],
-                    fill: false,
-                    borderColor: documentStyle.getPropertyValue('--blue-200'),
-                    tension: 0.4,
+                    label: 'Sağlıklı Yaşam',
+                    backgroundColor: documentStyle.getPropertyValue('--pink-400'),
+                    borderColor: documentStyle.getPropertyValue('--pink-200'),
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                },
+                {
+                    label: 'Seyahat',
+                    backgroundColor: documentStyle.getPropertyValue('--green-300'),
+                    borderColor: documentStyle.getPropertyValue('--green-300'),
+                    data: [28, 48, 40, 19, 86, 27, 90]
                 }
             ]
         };
         const options = {
             maintainAspectRatio: false,
-            aspectRatio: 0.6,
+            aspectRatio: 0.8,
             plugins: {
                 legend: {
                     labels: {
-                        color: textColor
+                        fontColor: textColor
                     }
                 }
             },
             scales: {
                 x: {
                     ticks: {
-                        color: textColorSecondary
+                        color: textColorSecondary,
+                        font: {
+                            weight: 500
+                        }
                     },
                     grid: {
-                        color: surfaceBorder
+                        display: false,
+                        drawBorder: false
                     }
                 },
                 y: {
@@ -63,18 +67,20 @@ export default function CategoryStatistics() {
                         color: textColorSecondary
                     },
                     grid: {
-                        color: surfaceBorder
+                        color: surfaceBorder,
+                        drawBorder: false
                     }
                 }
             }
         };
+
         setChartData(data);
         setChartOptions(options);
     }, []);
 
     return (
         <div className="card">
-            <Chart type="line" data={chartData} options={chartOptions} />
+            <Chart type="bar" data={chartData} options={chartOptions} />
         </div>
     )
 }
