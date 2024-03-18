@@ -1,11 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Post } from '../api/Types.tsx';
-import categories from '../jsonfiles/category.json';
-
+import { Category, Post } from '../api/Types.tsx';
+import categoryData from '../jsonfiles/categories.json';
 interface LocationState {
     filteredPosts: Post[];
 }
+
+const categories: Category[] = categoryData;
 
 const FilteredPostsPage: React.FC = () => {
     const location = useLocation();
@@ -20,8 +21,8 @@ const FilteredPostsPage: React.FC = () => {
             <div>
                 {filteredPosts.map((post) => (
                     <div key={post.id}>
-                        <h3>{post.header}</h3> {/* post'un başlık özelliğini göstermek için post.title kullanılmalı */}
-                        <p>Kategori: {categoryName[post.id - 1]}</p> {/* categoryId kullanarak kategori adını bul, -1 çünkü kategori id'leri 1'den başlıyor ancak indexler 0'dan başlıyor */}
+                        <h3>{post.header}</h3>
+                        <p>Kategori: {categoryName[post.id]}</p>
                     </div>
                 ))}
             </div>

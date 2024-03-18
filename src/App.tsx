@@ -8,23 +8,9 @@ import CategoryStatisticsPage from "./pages/categorystatisticspage.tsx";
 import AddPostPage from "./pages/AddPostPage.tsx";
 import UpdatePostPage from "./pages/UpdatePostPage.tsx";
 import UserPage from "./pages/UserPage.tsx";
-import category from '../src/jsonfiles/category.json'
 import FilteredPostsPage from "./pages/FilteredPostPage.tsx";
 
-const categories = [
-  {
-    "id": 1,
-    "name": "Core"
-  },
-  {
-    "id": 2,
-    "name": "Blocks"
-  },
-  {
-    "id": 3,
-    "name": "UI Kit"
-  }
-]
+
 
 
 

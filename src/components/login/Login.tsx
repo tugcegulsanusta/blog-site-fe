@@ -11,6 +11,9 @@ export default function Login() {
   function handleCreateClick() {
     navigate("/signup");
   }
+  function handleClick() {
+    navigate("/user")
+  }
   return (
     <>
       <Helmet>
@@ -74,7 +77,7 @@ export default function Login() {
               </a>
             </div>
 
-            <Button label="Sign In" icon="pi pi-user" className="w-full" />
+            <Button label="Sign In" icon="pi pi-user" className="w-full" onClick={handleClick} />
           </div>
         </div>
       </div>

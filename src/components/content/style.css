@@ -15,5 +15,7 @@
   margin-top: 3%;
 }
 .views{
-  margin-right: 2%;
+  float:center;
+  font-size: smaller;
+  color: #413e3f;
 }

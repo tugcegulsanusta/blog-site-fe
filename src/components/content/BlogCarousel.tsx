@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "primereact/carousel";
-import blogItems from "./blogItems.json";
+import blogItems from "../../jsonfiles/posts.json";
 import CarouselPostTemplate from "./CarouselPostTemplate.tsx";
 
 export default function BlogCarousel() {

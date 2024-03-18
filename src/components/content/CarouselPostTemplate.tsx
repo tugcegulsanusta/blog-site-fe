@@ -8,18 +8,15 @@ export default function CarouselPostTemplate(product) {
   function handleClick() {
     navigate(`/post${product.id}`)
   }
-  const [decodedImage, setDecodedImage] = useState<string | null>(null);
-
-  const [photoUrl, setPhotoUrl] = useState<string>("");
 
 
 
   return (
     <div
       style={{
-        width: "450px",
-        height: "400px",
-        margin: "1px",
+        width: "480px",
+        height: "500px",
+        margin: "0.5px",
         overflow: "hidden",
       }}
     >
@@ -36,17 +33,19 @@ export default function CarouselPostTemplate(product) {
           />
         </div>
         <div>
-          <h4 className="mb-3 text-lg font-semibold">{product.header}</h4>
-          <h6 className="mt-0 mb-3 text-sm">{product.content.slice(0, 250)}...</h6>
-          <div className="mt-5 flex flex-wrap gap-2 justify-content-center">
+          <h4 className="mb-3 text-lg font-semibold"><b>{product.header}</b></h4>
+          <h6 className="mt-0 mb-3 text-sm">{product.content.slice(0, 200)}...</h6>
+          <div className="mt-5 text-center">
             <Button
               icon="pi pi-link"
               rounded
               style={{ backgroundColor: "#6c757d", borderColor: "#6c757d" }}
               onClick={handleClick}
-            /><p className="views">Görüntüleme: {product.view}</p>
+            />
           </div>
-
+          <div>Okumaya devam et...</div>
+          <div> </div>
+          <div className="views">Görüntüleme: {product.view}</div>
         </div>
       </div>
     </div>

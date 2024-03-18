@@ -1,6 +1,13 @@
 interface Category {
+    id: number;
+    name: string;
+}
+interface Post {
     id: number,
-    name: string
+    category_id: number,
+    header: string,
+    content: string,
+    view: number
 }
 
-export { Category };
+export { Category, Post };

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Bilim"
+  },
+  {
+    "id": 2,
+    "name": "Teknoloji"
+  },
+  {
+    "id": 3,
+    "name": "Sağlık"
+  },
+  {
+    "id": 4,
+    "name": "Seyahat"
+  }
+]

@@ -41,7 +41,7 @@ export default function CategoryStatistics() {
         };
         const options = {
             maintainAspectRatio: false,
-            aspectRatio: 0.8,
+            aspectRatio: 1,
             plugins: {
                 legend: {
                     labels: {

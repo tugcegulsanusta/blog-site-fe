@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Dialog } from "primereact/dialog";
 import AddCategoryPopUp from "../category/AddCategoryPopUp.tsx";
 import DeleteCategoryPopUp from "../category/DeleteCategoryPopUp.tsx";
-import data from '../../jsonfiles/category.json';
-
+import user from "../../jsonfiles/user.json"
 interface User {
   id: string,
   username: string,
@@ -141,8 +140,8 @@ export default function NavigationBar() {
         className="w-8rem sm:w-auto"
       />
       <Avatar
-        image='../../../public/micro-dot-blog.svg'
-        shape="circle"
+        image='https://media.istockphoto.com/id/1381221247/tr/foto%C4%9Fraf/beautiful-afro-girl-with-curly-hairstyle.jpg?s=1024x1024&w=is&k=20&c=4p6sLfDa4Sssxgq0wZBL5TF_yeTCobkrNZ3f2LKIqA0='
+        shape='circle'
         onClick={() => {
           if (!isLogin) {
             navigate("/login");

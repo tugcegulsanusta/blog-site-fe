@@ -20,7 +20,7 @@ const AccountSetting: React.FC = () => {
     username: 'example_user',
     email: 'user@example.com',
     password: 'example_password',
-    base64img: 'example_base64_image',
+    base64img: 'https://media.istockphoto.com/id/1381221247/tr/foto%C4%9Fraf/beautiful-afro-girl-with-curly-hairstyle.jpg?s=1024x1024&w=is&k=20&c=4p6sLfDa4Sssxgq0wZBL5TF_yeTCobkrNZ3f2LKIqA0=',
   };
 
   const [newImage, setNewImage] = useState<string | undefined>(undefined);
@@ -50,65 +50,60 @@ const AccountSetting: React.FC = () => {
 
   return (
     <div className='container'>
-    <div className="flex align-items-center justify-content-center">
-    <div className="p-col-12 p-md-4">
-      <div className="p-d-flex p-jc-center">
+      <div className="p-d-flex p-jc-center avatar-container">
         <Avatar
-          image={newImage || user.base64img}
-          shape="circle"
+          image={user.base64img}
+          className="custom-avatar"
           size="xlarge"
-          className="mb-3"
         />
-      </div>
-    </div>
-    <div className="p-col-12 p-md-8">
-      <div className="p-fluid">
-        <div className="p-field">
-          <label htmlFor="username">Username</label>
-          <InputText
-          className='input-text'
-            id="username"
-            value={newUsername}
-            onChange={(e) => setNewUsername(e.target.value)}
-          />
+        <div className="p-col-12 p-md-8">
+          <div className="p-fluid">
+            <div className="p-field">
+              <label htmlFor="username">Kullanıcı Adı: </label>
+              <InputText
+                className='input-text'
+                id="username"
+                value={newUsername}
+                onChange={(e) => setNewUsername(e.target.value)}
+              />
+            </div>
+            <div className="p-field">
+              <label htmlFor="email">Email</label>
+              <InputText
+                id="email"
+                value={newEmail}
+                onChange={(e) => setNewEmail(e.target.value)}
+              />
+            </div>
+            <div className="p-field">
+              <label htmlFor="password">Password</label>
+              <Password
+                id="password"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+              />
+            </div>
+            <div className="p-field">
+              <label htmlFor="image">Profile Picture</label>
+              <input
+                type="file"
+                id="image"
+                accept="image/*"
+                onChange={handleImageChange}
+              />
+            </div>
+            <div className="p-d-flex p-jc-center">
+              <Button
+                label="Save"
+                icon="pi pi-check"
+                className="p-mt-3"
+                onClick={handleSave}
+              />
+            </div>
+          </div>
         </div>
-        <div className="p-field">
-          <label htmlFor="email">Email</label>
-          <InputText
-            id="email"
-            value={newEmail}
-            onChange={(e) => setNewEmail(e.target.value)}
-          />
-        </div>
-        <div className="p-field">
-          <label htmlFor="password">Password</label>
-          <Password
-            id="password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-          />
-        </div>
-        <div className="p-field">
-          <label htmlFor="image">Profile Picture</label>
-          <input
-            type="file"
-            id="image"
-            accept="image/*"
-            onChange={handleImageChange}
-          />
-        </div>
-        <div className="p-d-flex p-jc-center">
-          <Button
-            label="Save"
-            icon="pi pi-check"
-            className="p-mt-3"
-            onClick={handleSave}
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+      </div >
+    </div >
   );
 };
 
