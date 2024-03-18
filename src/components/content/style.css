@@ -7,8 +7,13 @@
     background: #413e3f !important;
 }
 .p-carousel[pr_id_6] .p-carousel-item {
-  flex: 1 0 80%;
+  flex: 1 0 90%;
 }
 .card{
   justify-content: center;
+  padding:2%;
+  margin-top: 3%;
+}
+.views{
+  margin-right: 2%;
 }

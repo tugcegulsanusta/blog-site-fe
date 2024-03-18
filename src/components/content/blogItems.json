@@ -1,26 +1,30 @@
 [
   {
     "id": 15,
-    "header": " Before you start: How to start a blog?",
-    "content": "Before you start writing your blog post, make sure you have a clear understanding of your target audience. To do so, take the following steps. This can result in mismanagement of code versions and the output results being inconsistent. pgTAP allows you to test everything from the structure of your schema, but also the logic in views, procedures",
-    "base64img": ""
+    "header": "Başlamadan Önce, Blog Nasıl azılır?",
+    "content": "Blog yazmanın ilk adımı blog konusunu belirlemektir. Bu adım süreçte en zor kısımlardan olabilir ama blog konusunu belirledikten sonra yazıya başlama ve bitirme sürecinin çok daha kolay olduğunu söyleyebiliriz.Yazdığınız yazının etkileşim alması ve insanlar tarafından görünürlüğünün artması mutlu edici bir durumdur. Fakat bu noktaya takılarak ilgi alanınızın dışında ama etkileşim potansiyeli yüksek olan konular seçmemelisiniz. Bu durum blog yazma süreciniz de motivasyonunuzu düşürebilir. Bu yüzden blog konunuzu belirlerken ilginizi çeken aynı zamanda etkileşim potansiyeli yüksek konular arasında dengeyi sağlamalısınız. Belirlediğiniz blog konusu ile ilgili yazı yazarken mutlaka keyif almalısınız. Aynı zamanda bu konu okuyucularınızın, ilgi alanına girmeli ve onlara değer katmalıdır. Bu amaçla yazabileceğiniz konular üzerinde düşünebilir ve niş pazarlama alanlarınızı belirleyebilirsiniz. Yeni konu fikirleri için ilham alabileceğiniz yerler aşağıdaki gibi sıralanabilir:Niş alanınızı belirledikten sonra o alan dahilinde yazılan diğer bloglara göz atabilirsiniz. İlgi alanınızdaki konular dahilinde hangi başlıkların trend dolduğunu Google Trends’e bakarak öğrenebilirsiniz.Niş alanınızla ilgili güncel haberleri ve etkinlikleri araştırabilirsiniz.",
+    "base64img": "https://media.istockphoto.com/id/1346675635/tr/foto%C4%9Fraf/modern-medical-research-laboratory-portrait-of-latin-and-black-young-scientists-using.jpg?s=1024x1024&w=is&k=20&c=-1ZpvQ1dedb1HZ4cRb5-XnAY1DFPFnG7fr9SRDuM1dg=",
+    "view": 120
   },
   {
     "id": 13,
-    "header": "How to use pgTAP to automate unit testing in postgres",
-    "content": "ct to test the overall functionality of the application but is often either done manually or overlooked. This can result in mismanagement of code versions and the output results being inconsistent. pgTAP allows you to test everything from the structure of your schema, but also the logic in views, procedures, functions, rules and triggers.",
-    "base64img": ""
+    "header": "2023 Yazılım Trendleri",
+    "content": "Teknolojinin hızla gelişmesiyle beraber, yepyeni yazılım trendleri ortaya çıkmaya devam ediyor. Böylesine rekabetçi bir ortamda işlerini büyütmek isteyen her şirket, yazılım geliştirme trendlerinden haberdar olmak zorunda. Peki, 2023 yazılım trendleri neler? \n Her geçen yıl teknoloji biraz daha gelişiyor ve daha global bir dünya yaratıyor. Bu da müşteri taleplerini günden güne arttırıyor ve teknoloji, müşteri talepleriyle birlikte değişime ve gelişime uğruyor. Bu döngüyü yakından takip etmek ve özellikle de yazılım trendlerini yakından izlemek, yazılım geliştiriciler için büyük önem taşıyor. \nBu yazımızda yazılım geliştiriciler ve yan sektörler için genel olarak 2023 yılında öne çıkacak olan yazılım trendlerini incelemeye çalıştık.\n1. No Code / Low Code \nGenel olarak no code / low code fazla küçümsenmiş hatta bir efsane olarak görülmüştü. Şimdi ise inanılmaz ciddiye alınıyor. Low code (düşük kod), yazılımcıların hızlı bir şekilde yazılım geliştirmelerine yarıyor. Düşük kod veya az kod kullanımı, adından da anlaşılacağı üzere yazılım geliştirme süreçlerini ve hem hızlandırıyor hem de kolaylaştırıyor. Bu yüzden yazılım geliştiriciler için 2023 yılında trend olmaya devam edecek önemli konulardan birisi no code / low code olmaya devam edecek.\n\n2. Siber Güvenlik \nTeknoloji geliştikçe, teknoloji devleri kullanıcıların ve müşterilerin gerçek sorunlarını fark etmeye başladı. Bu sorunların arasında siber güvenlik ise büyük bir yer kaplıyordu. Siber güvenlik alanındaki çalışmalar büyük oranda gelişim göstermiş olsa da, ilerleyen yıllarda en çok gelişen alanlar arasında yer almaya devam edecek. Çünkü teknoloji geliştikçe, siber güvenlik alanındaki tehditler de büyümeye devam ediyor. Özellikle bulut teknolojisi yaygınlaştıkça, siber güvenlik alanındaki trendlerin takibi daha da önemli hale gelecek.\nŞirketler, altyapılarını korumak için veri merkezlerinin tasarımında ve işletiminde siber güvenliğe öncelik vermek zorunda. Zaten günümüzde siber güvenlik yatırımı yapmak, bir siber saldırının verdiği hasarı onarmaktan çok daha kolay ve az maliyetli halde. Hal böyle olunca yazılım geliştiriciler de siber güvenlik alanında çalışmalar yapmaktan geri kalamıyorlar. Bununla beraber işletmelerin de siber güvenliğe yatırım yapmaya devam etmelerine kaçınılmaz gözüyle bakılıyor.\n\n3. Nesnelerin İnterneti (IoT)\nNesnelerin interneti alanındaki teknolojik gelişmeler ilerledikçe, yazılım geliştirme alanındaki eğilimin de katlanarak artması devam ediyor. Her geçen yıl, işletmelerin teknolojik gelişmelerin bir adım önünde olma ihtiyacı da artıyor. Hal böyle olunca, IoT teknolojisini mevcut yazılım çözümlerine entegre etmek, 2023 yılının en önemli trendlerinden biri olacak gibi görünüyor.",
+    "base64img": "https://media.istockphoto.com/id/1321462048/tr/foto%C4%9Fraf/dijital-d%C3%B6n%C3%BC%C5%9F%C3%BCm-kavram%C4%B1-sistem-m%C3%BChendisli%C4%9Fi-ikili-kod-programlama.jpg?s=1024x1024&w=is&k=20&c=nZKx_q1-gyPTjxUYC159IDKbJHJP79NGaGZFH6xvB10=",
+    "view": 56
   },
   {
     "id": 16,
     "header": "Setting up mock inserts",
     "content": "we are inserting the row instead of using existing data is because data is subject to change and this test is not to ensure whether the data exists or not, but to check the functionality of the insert and the return value of the function. You can also insert multiple rows using a loop, if you want to test multiple rows insert scenario.",
-    "base64img": ""
+    "base64img": "https://media.istockphoto.com/id/516449022/tr/foto%C4%9Fraf/lady-with-kayak.jpg?s=1024x1024&w=is&k=20&c=nqizFxOcITdNxNGjeWKLrgxYwAL934-jmaopSD54pt8=",
+    "view": 78
   },
   {
     "id": 17,
     "header": "Setting up mock inserts",
     "content": "we are inserting the row instead of using existing data is because data is subject to change and this test is not to ensure whether the data exists or not, but to check the functionality of the insert and the return value of the function. You can also insert multiple rows using a loop, if you want to test multiple rows insert scenario.",
-    "base64img": ""
+    "base64img": "https://media.istockphoto.com/id/1181135204/tr/foto%C4%9Fraf/mutlu-kad%C4%B1n-do%C4%9Fada-g%C3%BCn-bat%C4%B1m%C4%B1nda-s%C4%B1rt%C4%B1-ile-ayakta.jpg?s=1024x1024&w=is&k=20&c=86KoV4W61Mim35JICAHFJssFhrZnhGcJkcKuaHVz_io=",
+    "view": 200
   }
 ]
