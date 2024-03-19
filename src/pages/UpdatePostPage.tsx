@@ -5,8 +5,8 @@ import UpdatePost from '../components/post/UpdatePost.tsx'
 export default function UpdatePostPage() {
   return (
     <>
-    <NavigationBar/>
-    <UpdatePost/>
+
+      <UpdatePost />
     </>
   )
 }

@@ -3,3 +3,8 @@
     justify-items: center;
     text-align: center;
 }
+
+.dialog .ui-dialog-title {
+    text-align: center;
+    justify-content: center;
+  }

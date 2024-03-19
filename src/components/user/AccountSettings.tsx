@@ -59,7 +59,7 @@ const AccountSetting: React.FC = () => {
         <div className="p-col-12 p-md-8">
           <div className="p-fluid">
             <div className="p-field">
-              <label htmlFor="username">Kullanıcı Adı: </label>
+              <label htmlFor="username">Username</label>
               <InputText
                 className='input-text'
                 id="username"
@@ -102,8 +102,8 @@ const AccountSetting: React.FC = () => {
             </div>
           </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };
 

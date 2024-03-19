@@ -9,6 +9,8 @@ import AddPostPage from "./pages/AddPostPage.tsx";
 import UpdatePostPage from "./pages/UpdatePostPage.tsx";
 import UserPage from "./pages/UserPage.tsx";
 import FilteredPostsPage from "./pages/FilteredPostPage.tsx";
+import UpdateCategoryPopUp from "./components/category/UpdateCategoryPopUp.tsx";
+import NavigationBar from "./components/header/NavigationBar.tsx";
 
 
 
@@ -17,11 +19,13 @@ import FilteredPostsPage from "./pages/FilteredPostPage.tsx";
 export default function App() {
   return (
     <div className="App">
+      <NavigationBar />
       <Routes>
         <Route path="" element={<Main />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/addCategory" element={<AddCategoryPopUp />} />
+        <Route path="/updateCategory" element={<UpdateCategoryPopUp />} />
         <Route path="/statistics" element={<CategoryStatisticsPage />} />
         <Route path="/addPost" element={<AddPostPage />} />
         <Route path="/updatePost" element={<UpdatePostPage />} />

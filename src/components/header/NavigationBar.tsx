@@ -7,6 +7,10 @@ import { Dialog } from "primereact/dialog";
 import AddCategoryPopUp from "../category/AddCategoryPopUp.tsx";
 import DeleteCategoryPopUp from "../category/DeleteCategoryPopUp.tsx";
 import user from "../../jsonfiles/user.json"
+import UpdateCategoryPopUp from "../category/UpdateCategoryPopUp.tsx";
+import categoryData from "../../jsonfiles/categories.json"
+import { useLocation } from "react-router-dom";
+
 interface User {
   id: string,
   username: string,
@@ -28,34 +32,19 @@ interface Post {
 }
 
 export default function NavigationBar() {
+  const location = useLocation();
+  if (location.pathname.includes("login") || location.pathname.includes("signup")) {
+    return null;
+  }
+
   const [isLogin, setIsLogin] = useState(false);
   const navigate = useNavigate();
   const [addCategoryDialog, setAddCategoryDialog] = useState(false);
   const [deleteCategoryDialog, setDeleteCategoryDialog] = useState(false);
   const [updateCategoryDialog, setUpdateCategoryDialog] = useState(false);
-  const [navItems, setNavItems] = useState([]);
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [posts, setPosts] = useState<Post[]>([]);
 
-  useEffect(() => {
-    const categoryData = [
-      { id: 1, name: "Teknoloji" },
-      { id: 2, name: "Bilim" },
-      { id: 3, name: "Sağlıklı Yaşam" },
-      { id: 4, name: "Seyahat" }
-    ];
-    setCategories(categoryData);
+  const [categories, setCategories] = useState<Category[]>(categoryData);
 
-    const postsData = [
-      { id: 1, header: "Header 1", content: "Content 1", categoryName: "Teknoloji", base64img: "img1" },
-      { id: 2, header: "Header 2", content: "Content 2", categoryName: "Bilim", base64img: "img2" },
-      { id: 3, header: "Header 3", content: "Content 3", categoryName: "Sağlıklı Yaşam", base64img: "img3" },
-      { id: 4, header: "Header 4", content: "Content 4", categoryName: "Seyahat", base64img: "img4" },
-      { id: 5, header: "Header 5", content: "Content 5", categoryName: "Teknoloji", base64img: "img5" },
-      { id: 6, header: "Header 6", content: "Content 6", categoryName: "Bilim", base64img: "img6" }
-    ];
-    setPosts(postsData);
-  }, []);
 
 
 
@@ -169,19 +158,29 @@ export default function NavigationBar() {
       />
       <Dialog
         className="dialog"
-        header=<h2>Kategori Ekle</h2>
+        header={<h2 style={{ textAlign: 'center' }}>Kategori Ekle</h2>}
         visible={addCategoryDialog}
         onHide={() => setAddCategoryDialog(false)}
       >
         <AddCategoryPopUp />
       </Dialog>
+
       <Dialog
         className="dialog"
-        header=<h2>Kategori Sil</h2>
+        header={<h2 style={{ textAlign: 'center' }}>Kategori Sil</h2>}
         visible={deleteCategoryDialog}
         onHide={() => setDeleteCategoryDialog(false)}
       >
         <DeleteCategoryPopUp />
+      </Dialog>
+
+      <Dialog
+        className="dialog"
+        header={<h2 style={{ textAlign: 'center' }}>Kategori Düzenle</h2>}
+        visible={updateCategoryDialog}
+        onHide={() => setUpdateCategoryDialog(false)}
+      >
+        <UpdateCategoryPopUp />
       </Dialog>
     </>
   );

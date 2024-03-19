@@ -3,11 +3,10 @@ import AddPost from "../components/post/AddPost.tsx";
 import React from "react";
 
 
-export default function AddPostPage(){
-    return(
+export default function AddPostPage() {
+    return (
         <>
-        <NavigationBar/>
-        <AddPost/>
+            <AddPost />
         </>
     );
 }

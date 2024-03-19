@@ -4,7 +4,7 @@ interface Category {
 }
 interface Post {
     id: number,
-    category_id: number,
+    categoryId: number,
     header: string,
     content: string,
     view: number

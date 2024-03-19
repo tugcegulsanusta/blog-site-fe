@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { createCategory } from '../../api/CategoryApi.tsx'
+import { InputText } from "primereact/inputtext";
 
 export default function AddCategoryPopUp() {
   const [value, setValue] = useState("");
