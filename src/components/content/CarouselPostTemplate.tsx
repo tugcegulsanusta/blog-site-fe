@@ -6,10 +6,8 @@ import { useNavigate } from "react-router-dom";
 export default function CarouselPostTemplate(product) {
   const navigate = useNavigate();
   function handleClick() {
-    navigate(`/post${product.id}`)
+    navigate(`/post/${product.id}`)
   }
-
-
 
   return (
     <div

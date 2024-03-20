@@ -7,7 +7,7 @@ import NavigationBar from "./components/header/NavigationBar.tsx";
 import BlogCarousel from "./components/content/BlogCarousel.tsx";
 import CategoryStatistics from "./components/statistics/CategoryStatistics.tsx";
 import AccountSetting from './components/user/AccountSettings.tsx'
-
+import SinglePost from "./components/content/SinglePost.tsx";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
         <Route path="/statistics" element={<CategoryStatistics />} />
         <Route path="/user" element={<AccountSetting />} />
         <Route path="/category/*" element={<FilteredPostsPage />} />
+        <Route path="/post/*" element={<SinglePost />} />
       </Routes>
     </div>
   );
