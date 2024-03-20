@@ -5,14 +5,8 @@ import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import './style.css';
+import { User } from '../../api/Types'
 
-interface User {
-  id: string;
-  username: string;
-  email: string;
-  password: string;
-  base64img: string;
-}
 
 const AccountSetting: React.FC = () => {
   const user: User = {

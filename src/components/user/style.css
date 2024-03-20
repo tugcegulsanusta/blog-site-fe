@@ -18,7 +18,7 @@
     float:initial
 }
 .container{
-    margin: 20px;
+    margin: 4%;
  
 }
 .input-text{
@@ -43,6 +43,6 @@
   .custom-avatar {
     width: 300px; 
     height: 200px; 
-    border-radius: 70%;
+    border-radius: 25px;
     object-fit: cover; 
   }

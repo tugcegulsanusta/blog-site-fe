@@ -8,9 +8,20 @@
     background: var(--bluegray-400) !important;
     border: var(--bluegray-400);
 }
+
+.p-button:hover {
+    background-color: blue;
+}
 .add-photo{
     margin: 1%;
     background-color: gray !important;
+}
+
+.button-color{
+    background-color: red !important;
+}
+.button-color:hover{
+    background-color: black !important;
 }
 .p-2{
     margin: 1%;
@@ -39,3 +50,9 @@
 .d-block{
     box-shadow: none !important;
 }
+
+
+
+
+
+

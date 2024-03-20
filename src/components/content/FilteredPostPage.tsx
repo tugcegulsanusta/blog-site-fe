@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Category, Post } from '../api/Types.tsx';
-import categoryData from '../jsonfiles/categories.json';
-import blogItems from "../jsonfiles/posts.json";
-import CarouselPostTemplate from "../components/content/CarouselPostTemplate.tsx";
+import { Category, Post } from '../../api/Types.tsx';
+import categoryData from '../../jsonfiles/categories.json';
+import blogItems from "../../jsonfiles/posts.json";
+import CarouselPostTemplate from "./CarouselPostTemplate.tsx";
 import { Carousel } from "primereact/carousel";
 interface LocationState {
     filteredPosts: Post[];
@@ -49,18 +49,15 @@ const FilteredPostsPage: React.FC = () => {
     const products = blogItems.filter(item => item.categoryId == categoryId);
 
     return (
-        <div>
-            <h1>{categoryNameUtfDecoded} </h1>
-            <div className="card">
-                <Carousel
-                    value={products}
-                    numVisible={3}
-                    numScroll={3}
-                    responsiveOptions={responsiveOptions}
-                    itemTemplate={CarouselPostTemplate}
-                    color="light"
-                />
-            </div>
+        <div className="card">
+            <Carousel
+                value={products}
+                numVisible={3}
+                numScroll={3}
+                responsiveOptions={responsiveOptions}
+                itemTemplate={CarouselPostTemplate}
+                color="light"
+            />
         </div>
     );
 };

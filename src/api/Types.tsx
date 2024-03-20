@@ -14,7 +14,6 @@ interface User {
     username: string,
     email: string,
     password: string,
-    authorities: string,
     base64img: string
 }
 

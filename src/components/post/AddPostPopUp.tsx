@@ -3,8 +3,7 @@ import { Button } from "primereact/button";
 import { createPost } from '../../api/PostApi.tsx'
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from 'primereact/inputtextarea';
-
-
+import './style.css';
 
 export default function AddPostPopUp() {
     const [value, setValue] = useState("");
@@ -23,10 +22,7 @@ export default function AddPostPopUp() {
                     <div>
                         <InputTextarea className="text-area" rows={10} cols={60} placeholder="İçerik Giriniz" />
                     </div>
-
-                    <div className='create-button'>
-                    </div>
-                    <Button label="Oluştur" onClick={handleClick} />
+                    <Button className="button-color" label="Oluştur" onClick={handleClick} />
                 </div>
             </div>
         </>

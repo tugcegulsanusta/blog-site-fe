@@ -15,25 +15,25 @@ export default function CategoryStatistics() {
             datasets: [
                 {
                     label: 'Teknoloji',
-                    backgroundColor: documentStyle.getPropertyValue('--purple-400'),
-                    borderColor: documentStyle.getPropertyValue('--purple-300'),
+                    backgroundColor: '#507182',
+                    borderColor: documentStyle.getPropertyValue('--gray-600'),
                     data: [80, 73, 80, 81, 56, 55, 40]
                 },
                 {
                     label: 'Bilim',
-                    backgroundColor: documentStyle.getPropertyValue('--blue-600'),
-                    borderColor: documentStyle.getPropertyValue('--blue-500'),
+                    backgroundColor: '#668fae',
+                    borderColor: documentStyle.getPropertyValue('--gray-500'),
                     data: [60, 48, 53, 62, 70, 55, 80]
                 },
                 {
                     label: 'Sağlıklı Yaşam',
-                    backgroundColor: documentStyle.getPropertyValue('--pink-400'),
+                    backgroundColor: '#7c9380',
                     borderColor: documentStyle.getPropertyValue('--pink-200'),
                     data: [28, 48, 40, 19, 86, 27, 90]
                 },
                 {
                     label: 'Seyahat',
-                    backgroundColor: documentStyle.getPropertyValue('--green-300'),
+                    backgroundColor: '#a2b999',
                     borderColor: documentStyle.getPropertyValue('--green-300'),
                     data: [28, 48, 40, 19, 86, 27, 90]
                 }
@@ -41,7 +41,7 @@ export default function CategoryStatistics() {
         };
         const options = {
             maintainAspectRatio: false,
-            aspectRatio: 1,
+            aspectRatio: 0.7,
             plugins: {
                 legend: {
                     labels: {
@@ -54,7 +54,7 @@ export default function CategoryStatistics() {
                     ticks: {
                         color: textColorSecondary,
                         font: {
-                            weight: 500
+                            weight: 800
                         }
                     },
                     grid: {

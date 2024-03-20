@@ -15,7 +15,14 @@
     "base64img": "https://media.istockphoto.com/id/1321462048/tr/foto%C4%9Fraf/dijital-d%C3%B6n%C3%BC%C5%9F%C3%BCm-kavram%C4%B1-sistem-m%C3%BChendisli%C4%9Fi-ikili-kod-programlama.jpg?s=1024x1024&w=is&k=20&c=nZKx_q1-gyPTjxUYC159IDKbJHJP79NGaGZFH6xvB10=",
     "view": 56
   },
-
+  {
+    "id": 16,
+    "categoryId": 4,
+    "header": "Kuzey Işıkları En İyi Nerede ve Ne Zaman Görülür?",
+    "content": "Kuzey Işıkları, yaşamınız boyunca şahit olabileceğiniz en büyüleyici doğal güzelliklerden biri. Kuzey Işıkları hangi ülkelerde ve ne zaman daha iyi görünür diye merak ediyorsanız bu yazımız sizin için. Bu görsel şölenin keyfini doyasıya çıkarmanız için Kuzey Işıklarını görebileceğiniz en iyi yerleri ve en iyi zamanları sizin için araştırdık.\nKuzey Işıkları (Aurora Borealis) nedir?\nKuzey Işıkları, dünyanın yaklaşık 60-250 kilometre ötesinde, güneşten kopan parçaların dünyanın manyetik alanına girip sıkışmasıyla meydana geliyor. Güneşten kopup gelen parçacıklar, atmosferde gaz molekülleri ile temasa geçiyor ve renklenerek gökyüzüne yayılıyor. Kutup Işıklarının renkleri çarpışan atomların türü ve çarpmanın etkisiyle kazandığı enerjiye göre belirleniyor.",
+    "base64img": "https://media.istockphoto.com/id/535916897/tr/foto%C4%9Fraf/ilulissat-aurora-greenland.jpg?s=1024x1024&w=is&k=20&c=2AbUSzXHRTbAMvIpBM07v1L9xxD_TS1Jw7iwyWZxMaE=",
+    "view": 78
+  },
   {
     "id": 17,
     "categoryId": 3,
@@ -33,6 +40,14 @@
     "view": 90
   },
   {
+    "id": 64,
+    "categoryId": 4,
+    "header": "İtalya’da Gezilecek Yerler Rehberi",
+    "content": "İtalya, Dünya’nın en çok turist alan ülkelerinden biri! Nefis yemekleri, köklü ve tarihi Roma İmparatorluğu dönemini, neredeyse ülkenin her bir köşesinde bulabileceğiniz sanat ve estetik algısı, doğası, şarapları ve kısacası İtalya’yı kendine has yapan her özelliği ile büyüleyici bir ülkeden söz ediyoruz! Hal böyle olunca gezilecek yerler bir hayli fazla!Yazımıza başlamadan önce, okumanız için size kolaylık sağlaması adına, İtalya’da gezebileceğiniz şehir ve bölgeleri aşağıda listeledik! Aynı İtalya 101 rotasında olduğu gibi, keşfe bu ana şehirlerden başlayabilir, huzuru ve dinginliği arıyorsanız, Toskana Vadisi çevresinde gezinebilir veya birbirinden güzel kasabalarıyla İtalya’nın kıyısında hem denizin hem de enfes manzaraların tadını çıkartabilirsiniz!",
+    "base64img": "https://media.istockphoto.com/id/176431489/tr/foto%C4%9Fraf/picturesque-corner-of-a-quaint-tuscan-hill-town-italy.jpg?s=1024x1024&w=is&k=20&c=FRjP-HefnRDvYb7LqDGtE1iQyu9CHDPPRDjMGs9KyYg=",
+    "view": 105
+  },
+  {
     "id": 10,
     "categoryId": 2,
     "header": "Apple Vision Pro ile Yeni Bir Devrin Başlangıcı!",
@@ -40,14 +55,7 @@
     "base64img": "https://media.istockphoto.com/id/1324380506/tr/foto%C4%9Fraf/people-with-vr-grasses-playing-virtual-reality-game-future-digital-technology-and-3d.jpg?s=1024x1024&w=is&k=20&c=HVB4nlCYmg8_HK6Oq_94KORRrzOt8FhRPqQ97sbv1oM=",
     "view": 200
   },
-  {
-    "id": 16,
-    "categoryId": 4,
-    "header": "Kuzey Işıkları En İyi Nerede ve Ne Zaman Görülür?",
-    "content": "Kuzey Işıkları, yaşamınız boyunca şahit olabileceğiniz en büyüleyici doğal güzelliklerden biri. Kuzey Işıkları hangi ülkelerde ve ne zaman daha iyi görünür diye merak ediyorsanız bu yazımız sizin için. Bu görsel şölenin keyfini doyasıya çıkarmanız için Kuzey Işıklarını görebileceğiniz en iyi yerleri ve en iyi zamanları sizin için araştırdık.\nKuzey Işıkları (Aurora Borealis) nedir?\nKuzey Işıkları, dünyanın yaklaşık 60-250 kilometre ötesinde, güneşten kopan parçaların dünyanın manyetik alanına girip sıkışmasıyla meydana geliyor. Güneşten kopup gelen parçacıklar, atmosferde gaz molekülleri ile temasa geçiyor ve renklenerek gökyüzüne yayılıyor. Kutup Işıklarının renkleri çarpışan atomların türü ve çarpmanın etkisiyle kazandığı enerjiye göre belirleniyor.",
-    "base64img": "https://media.istockphoto.com/id/535916897/tr/foto%C4%9Fraf/ilulissat-aurora-greenland.jpg?s=1024x1024&w=is&k=20&c=2AbUSzXHRTbAMvIpBM07v1L9xxD_TS1Jw7iwyWZxMaE=",
-    "view": 78
-  },
+
   {
     "id": 10,
     "categoryId": 2,
@@ -55,5 +63,46 @@
     "content": "İnsan vücudu bir orman gibidir; içinde her saniye trilyonlarca büyüleyici olay meydana gelir ve bunların çoğu biz farkında olmadan gerçekleşir. Bu makalede, insan vücudu faaliyetleri ormanının çok ilginç bir kısmına, yani bağışıklık sistemine yakından bakacağız. Bağışıklık sistemi, öldürücü (sitotoksik) T hücreleri adı verilen dövüş sanatları uzmanı sayesinde vücudu davetsiz misafirlere karşı korur. Öldürücü T hücreleri, virüsle enfekte olmuş hücreleri yok etmekten sorumludur, böylece virüs kendini çoğaltamaz ve vücuda yayılamaz. Öldürücü T hücrelerinin hangi hücrelere saldıracağını ve hangilerine ise saldırmayacağını nasıl bildiğini öğreneceğimiz bağışıklık sistemine maceralı bir yolculuk için bize katılın. Katkı: Profesör Peter Doherty, hücre aracılı bağışıklık savunmasının özgüllüğüne ilişkin keşiflerinden dolayı 1996 yılında Prof. Rolf Zinkernagel ile birlikte Nobel Fizyoloji veya Tıp Ödülü’nü kazandı.",
     "base64img": "https://media.istockphoto.com/id/1138937146/tr/foto%C4%9Fraf/lenfositler-t-h%C3%BCcreleri-veya-kanser-h%C3%BCcreleri-ile-3d-ill%C3%BCstrasyon-proteinleri.jpg?s=1024x1024&w=is&k=20&c=BGo0bFEJmEvqmD9qrWETZm5YWhFxf2nVP1CRcepPRdQ=",
     "view": 148
+  },
+  {
+    "id": 62,
+    "categoryId": 1,
+    "header": "Genom Büyüklüğü: Daha Büyük Genoma Sahip Canlılar Daha Üstün Olabilir mi?",
+    "content": "Biyolojik açıdan bakacak olursak, insanların 'en evrimleşmiş' ya da 'en üstün' tür olduğunu söylemek doğru değildir; çünkü evrim, doğrusal bir süreç değildir. Dallanarak ilerler ve hayatta kalmayı başarabilen her canlı, eşit derecede 'evrimleşmiş' sayılır. Çünkü her biri, kendi şartlarında var olabilecek kadar başarılıdır. Buna karşılık, Sistine Şapeli'ni inşa edip baş döndürücü bir şekilde boyayabilecek tek tür de biziz.Dolayısıyla böylesine sofistike varlıkların genomunun, örneğin basit bir soğanınkinden sonsuz derecede daha büyük olması gerektiğini varsaymak doğaldır. Ama bu, tamamen hatalı bir varsayım olurdu: Bir soğanın genomu, Albert Einstein'ın hücrelerinde bulunandan beş kat daha büyüktür.[1] Öyleyse söz konusu genomlar olduğunda 'Boyut önemli değildir.'diyebilir miyiz?",
+    "base64img": "https://media.istockphoto.com/id/1421515036/tr/foto%C4%9Fraf/dna-helix.jpg?s=1024x1024&w=is&k=20&c=NF4nzpHvZyEMVG1nC54619rVTo8_8ZBLUjV3MN45b6I=",
+    "view": 218
+  },
+  {
+    "id": 60,
+    "categoryId": 3,
+    "header": "Yaşlanma karşıtı en iyi besinler",
+    "content": "Yaşlanmayı durduramasak da yavaşlatabilir, sağlıklı kalabilir ve sağlıklı yaş alabiliriz. Elbette bunun için öncelikle doğru beslenmeliyiz. Yaşlandıkça bedenlerimizin yalnızca görünüşleri değil, aynı zamanda çalışma biçimleri de değişir.Örneğin yediklerimizi sindirmemiz daha uzun sürebilir, eskisi kadar susuzluk hissetmeyip yeterince su içmeyebiliriz ya da yiyeceklerden lezzet alma hissimizi kısmen yitirebiliriz. Ayrıca çiğnemekte zorlanabilir, yemek pişirmekten üşenebilir ya da tek başına yemekten bıkmış olabiliriz. Bu gibi durumlar vücut metabolizmasının bozulmasına ve yaşlanmanın getirdiği sorunlara karşı kapının daha fazla aralanmasına ortam sağlar.Yaşlanma karşıtı besinlerden bahsetmeden önce ilk olarak hepsinden önemlisi bedenin en büyük ihtiyacı su demek istiyorum.  Yaşlandıkça, yeterince su içemeyebilirsiniz, çünkü eskisi kadar susamış hissetmezsiniz. Suyun önemi çok fark edilmez ancak vücudumuz çoğunlukla sudur. Eğer kronik olarak susuz kalmışsanız, hücrelerin nasıl göründüğünü hayal bile edemezsiniz. Odaklanma sorunu yaşayabilirsiniz, daha kolay yorulursunuz, sıcağa tahammül edemezsiniz. Yorgunluk, hafif baş ağrıları ve kabızlık gibi şeylerden şikayet eden insanlar, çoğu zaman sadece susuz kalmıştır!Peki tabloyu nasıl güzelleştirebiliriz? Öncelikle hemen herkesin bildiği gibi paketli gıdaları tüketmemeye, sebze, sağlıklı yağ ve proteinlerden zengin bir beslenme şeklini benimsemeye ve yeterince su içmeye karşı direnç göstermemeliyiz. Bunun ötesinde ayrıca bazı yiyecekler, özellikle sağlıklı beslenmek isteyen yetişkinler için çok daha faydalıdır. Şimdi bunlardan bazılarını inceleyelim…",
+    "base64img": "https://media.istockphoto.com/id/1155240408/tr/foto%C4%9Fraf/yemek-%C3%A7ok-%C3%A7e%C5%9Fitli-dolu-tablo.jpg?s=1024x1024&w=is&k=20&c=VLI-J9dk3H4QeTYBh4MeKqRB2was5CnUB6THu5uC-Io=",
+    "view": 108
+  },
+  {
+    "id": 61,
+    "categoryId": 3,
+    "header": "Aspartam Nedir? Dünyanın En Yaygın Tatlandırıcısı Kansere Neden Oluyor mu?",
+    "content": "Yapay tatlandırıcılar, şekerin verdiği tatlılığı sağlamak amacıyla birçok gıda ürününe eklenen bileşiklerdir. Şekerden daha fazla tatlılık sağlarlar ve çoğunlukla kalori içermezler. Bu nedenle diyet ürünlerinde de sıklıkla tercih edilirler. Sağlıklı tatlandırıcıların sahip olması gereken özellikler arasında tatlandırıcı özelliğinin yüksek olması, enerji vermemesi (kalorisiz olması) ve kan şekerini yükseltmemesi bulunmaktadır. Yapay tatlandırıcılar iyi birer alternatif olarak görülse de uzun süreli ve yüksek dozda tüketimleri sağlık için zararlı olabilir. Dünya Sağlık Örgütü'nün kanser araştırmalarını yürüten birimi olan Uluslararası Kanser Araştırmaları Ajansı'nın (IARC), en yaygın kullanılan yapay tatlandırıcılardan biri olan aspartamı 2023 yılının temmuz ayında İnsanlar için olası kanserojen ilan etmesi beklenmektedir. ",
+    "base64img": "https://media.istockphoto.com/id/896408936/tr/foto%C4%9Fraf/%C5%9Feker-yerine-stevia-erythritol-ve-xylitol.jpg?s=1024x1024&w=is&k=20&c=_BRpteCWdkBKv0Ig5CU-kPSg6JojEkRd34m68liljF4=",
+    "view": 310
+  },
+
+  {
+    "id": 65,
+    "categoryId": 4,
+    "header": "Haziran'da Gidebileceğiniz 5 Rota",
+    "content": "Yaz aylarının gelmesiyle birlikte seyahat planlarınızı hayata geçirmenin tam zamanı! Haziran ayı adeta mükemmel hava koşulları ve tatil fırsatlarıyla dolu… Bir seyahatsever olarak rotalarınızı belirleme aşamasındaysanız, Bilet Dükkanı olarak sizin için özenle hazırladığımız bu yazımızdaki güzel mi güzel rotaları listenize ekleyebilirsiniz.Sizin için Haziran ayında gidilebilecek beş harika rotayı belirledik. Hem Türkiye'nin güzelliklerini keşfetmek hem de yurt dışında unutulmaz anılar biriktirmek isteyenler için çeşitli seçenekler sunduğumuz yazımızdaki destinasyonlara ulaşım için de avantajlı fiyatlarla seyahatin adresi Bilet Dükkanı’ndan faydalanmayı unutmayın.Doğal güzellikleri, mimari zenginlikleri, kültürel değerleri ve damak çatlatan mutfak kültürleriyle öne çıkan listemizi detaylıca incelemeyi ihmal etmeyin. İşte haziran ayında gidebileceğiniz 5 rota…",
+    "base64img": "https://media.istockphoto.com/id/1368992726/tr/foto%C4%9Fraf/happy-girl-celebrating-success-at-sunset-the-girl-is-wearing-a-hat-and-her-arms-are.jpg?s=1024x1024&w=is&k=20&c=JoFG6kIe1HHGMJaPCE-455MpTkkq0DMGcOFQQu4f1xo=",
+    "view": 148
+  },
+  {
+    "id": 66,
+    "categoryId": 1,
+    "header": "Bağışıklığın Kahramanları: Katil T Hücreleri",
+    "content": "İnsan vücudu bir orman gibidir; içinde her saniye trilyonlarca büyüleyici olay meydana gelir ve bunların çoğu biz farkında olmadan gerçekleşir. Bu makalede, insan vücudu faaliyetleri ormanının çok ilginç bir kısmına, yani bağışıklık sistemine yakından bakacağız. Bağışıklık sistemi, öldürücü (sitotoksik) T hücreleri adı verilen dövüş sanatları uzmanı sayesinde vücudu davetsiz misafirlere karşı korur. Öldürücü T hücreleri, virüsle enfekte olmuş hücreleri yok etmekten sorumludur, böylece virüs kendini çoğaltamaz ve vücuda yayılamaz. Öldürücü T hücrelerinin hangi hücrelere saldıracağını ve hangilerine ise saldırmayacağını nasıl bildiğini öğreneceğimiz bağışıklık sistemine maceralı bir yolculuk için bize katılın. Katkı: Profesör Peter Doherty, hücre aracılı bağışıklık savunmasının özgüllüğüne ilişkin keşiflerinden dolayı 1996 yılında Prof. Rolf Zinkernagel ile birlikte Nobel Fizyoloji veya Tıp Ödülü’nü kazandı.",
+    "base64img": "https://media.istockphoto.com/id/1138937146/tr/foto%C4%9Fraf/lenfositler-t-h%C3%BCcreleri-veya-kanser-h%C3%BCcreleri-ile-3d-ill%C3%BCstrasyon-proteinleri.jpg?s=1024x1024&w=is&k=20&c=BGo0bFEJmEvqmD9qrWETZm5YWhFxf2nVP1CRcepPRdQ=",
+    "view": 216
   }
 ]

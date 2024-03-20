@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
+import './style.css';
+
 
 export default function DeletePostPopUp() {
     const [value, setValue] = useState("");
