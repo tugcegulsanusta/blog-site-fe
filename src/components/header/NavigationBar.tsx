@@ -10,26 +10,9 @@ import user from "../../jsonfiles/user.json"
 import UpdateCategoryPopUp from "../category/UpdateCategoryPopUp.tsx";
 import categoryData from "../../jsonfiles/categories.json"
 import { useLocation } from "react-router-dom";
-
-interface User {
-  id: string,
-  username: string,
-  email: string,
-  password: string,
-  authorities: string,
-  base64img: string
-}
-interface Category {
-  id: number;
-  name: string;
-}
-interface Post {
-  id: number;
-  header: string;
-  content: string;
-  categoryName: string;
-  base64img: string;
-}
+import AddPostPopUp from "../post/AddPostPopUp.tsx";
+import { User, Category, Post } from '../../api/Types.tsx'
+import DeletePostPopUp from "../post/DeletePostPopUp.tsx";
 
 export default function NavigationBar() {
   const location = useLocation();
@@ -42,6 +25,8 @@ export default function NavigationBar() {
   const [addCategoryDialog, setAddCategoryDialog] = useState(false);
   const [deleteCategoryDialog, setDeleteCategoryDialog] = useState(false);
   const [updateCategoryDialog, setUpdateCategoryDialog] = useState(false);
+  const [addPostDialog, setAddPostDialog] = useState(false);
+  const [deletePostDialog, setDeletePostDialog] = useState(false)
 
   const [categories, setCategories] = useState<Category[]>(categoryData);
 
@@ -92,12 +77,12 @@ export default function NavigationBar() {
         {
           label: "Blog ekle",
           icon: "pi pi-plus",
-          command: () => navigate("/addPost"),
+          command: () => setAddPostDialog(true),
         },
         {
           label: "Blog sil",
           icon: "pi pi-minus",
-          command: () => navigate("/deletePost"),
+          command: () => setDeletePostDialog(true),
         },
         {
           label: "Blog düzenle",
@@ -181,6 +166,24 @@ export default function NavigationBar() {
         onHide={() => setUpdateCategoryDialog(false)}
       >
         <UpdateCategoryPopUp />
+      </Dialog>
+
+      <Dialog
+        className="dialog"
+        header={<h2 style={{ textAlign: 'center' }}>Gönderi Ekle</h2>}
+        visible={addPostDialog}
+        onHide={() => setAddPostDialog(false)}
+      >
+        <AddPostPopUp />
+      </Dialog>
+
+      <Dialog
+        className="dialog"
+        header={<h2 style={{ textAlign: 'center' }}>Gönderi Ekle</h2>}
+        visible={deletePostDialog}
+        onHide={() => setDeletePostDialog(false)}
+      >
+        <DeletePostPopUp />
       </Dialog>
     </>
   );

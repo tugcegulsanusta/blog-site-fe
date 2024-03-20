@@ -9,5 +9,13 @@ interface Post {
     content: string,
     view: number
 }
+interface User {
+    id: string,
+    username: string,
+    email: string,
+    password: string,
+    authorities: string,
+    base64img: string
+}
 
-export { Category, Post };
+export { Category, Post, User };

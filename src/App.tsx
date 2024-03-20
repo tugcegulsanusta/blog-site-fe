@@ -5,12 +5,13 @@ import Signup from "./components/signup/Signup.tsx";
 import Main from "./pages/main.tsx";
 import AddCategoryPopUp from "./components/category/AddCategoryPopUp.tsx";
 import CategoryStatisticsPage from "./pages/categorystatisticspage.tsx";
-import AddPostPage from "./pages/AddPostPage.tsx";
+import AddPostPopUp from "./components/post/AddPostPopUp.tsx";
 import UpdatePostPage from "./pages/UpdatePostPage.tsx";
 import UserPage from "./pages/UserPage.tsx";
 import FilteredPostsPage from "./pages/FilteredPostPage.tsx";
 import UpdateCategoryPopUp from "./components/category/UpdateCategoryPopUp.tsx";
 import NavigationBar from "./components/header/NavigationBar.tsx";
+import DeletePostPopUp from "./components/post/DeletePostPopUp.tsx";
 
 
 
@@ -24,11 +25,7 @@ export default function App() {
         <Route path="" element={<Main />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/addCategory" element={<AddCategoryPopUp />} />
-        <Route path="/updateCategory" element={<UpdateCategoryPopUp />} />
         <Route path="/statistics" element={<CategoryStatisticsPage />} />
-        <Route path="/addPost" element={<AddPostPage />} />
-        <Route path="/updatePost" element={<UpdatePostPage />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/category/*" element={<FilteredPostsPage />} />
       </Routes>
