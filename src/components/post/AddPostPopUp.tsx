@@ -5,6 +5,17 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from 'primereact/inputtextarea';
 import './style.css';
 
+const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            setNewImage(reader.result as string);
+        };
+        reader.readAsDataURL(file);
+    }
+};
+
 export default function AddPostPopUp() {
     const [value, setValue] = useState("");
     const [visible, setVisible] = useState(false);
@@ -18,7 +29,7 @@ export default function AddPostPopUp() {
                 <div className="d-flex flex-column flex-shrink-0 p-4 w-100">
                     <span className="d-block">Başlık: </span>
                     <InputText placeholder="Gönderi Başlığını Giriniz" className='input-header' />
-                    <Button className="add-photo" label='Ftotoğraf Ekle' onClick={(e) => setVisible(true)} />
+                    <Button className="add-photo" label='Fotoğraf Ekle' onChange={handleClick} />
                     <div>
                         <InputTextarea className="text-area" rows={10} cols={60} placeholder="İçerik Giriniz" />
                     </div>

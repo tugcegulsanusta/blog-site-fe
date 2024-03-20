@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Avatar } from 'primereact/avatar';
 import { InputText } from 'primereact/inputtext';
-import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import './style.css';
 import { User } from '../../api/Types'
@@ -35,16 +34,12 @@ const AccountSetting: React.FC = () => {
   };
 
   const handleSave = () => {
-    // Save updated user information
-    // For example, you can send a request to update the user data
-    // axios.post('/api/updateUser', { username: newUsername, email: newEmail, password: newPassword, base64img: newImage });
-    // After successful update, you can navigate to another page
     navigate('/');
   };
 
   return (
     <div className='container'>
-      <div className="p-d-flex p-jc-center avatar-container">
+      <div className="p-d-flex p-jc-center avatar-container " >
         <Avatar
           image={user.base64img}
           className="custom-avatar"
@@ -53,30 +48,34 @@ const AccountSetting: React.FC = () => {
         <div className="p-col-12 p-md-8">
           <div className="p-fluid">
             <div className="p-field">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username" className="block text-900 font-medium mb-2">
+                Username
+              </label>
               <InputText
-                className='input-text'
                 id="username"
-                value={newUsername}
-                onChange={(e) => setNewUsername(e.target.value)}
+                type="text"
+                placeholder={user.username}
+                className="w-full mb-3"
               />
             </div>
-            <div className="p-field">
-              <label htmlFor="email">Email</label>
-              <InputText
-                id="email"
-                value={newEmail}
-                onChange={(e) => setNewEmail(e.target.value)}
-              />
-            </div>
-            <div className="p-field">
-              <label htmlFor="password">Password</label>
-              <Password
-                id="password"
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-              />
-            </div>
+            <label htmlFor="email" className="block text-900 font-medium mb-2">
+              Email
+            </label>
+            <InputText
+              id="email"
+              type="text"
+              placeholder="Email address"
+              className="w-full mb-3"
+            />
+            <label htmlFor="password" className="block text-900 font-medium mb-2">
+              Password
+            </label>
+            <InputText
+              id="password"
+              type="password"
+              placeholder="Password"
+              className="w-full mb-3"
+            />
             <div className="p-field">
               <label htmlFor="image">Profile Picture</label>
               <input
@@ -97,7 +96,7 @@ const AccountSetting: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

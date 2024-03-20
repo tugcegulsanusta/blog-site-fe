@@ -49,7 +49,7 @@ const SinglePost: React.FC = () => {
         */
 
     return (
-        <div className="grid grid-nogutter surface-0 text-800">
+        <div className="grid grid-nogutter surface-20 text-800">
             <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
                 <section>
                     <span className="block text-6xl font-bold mb-1">{product.header}</span>

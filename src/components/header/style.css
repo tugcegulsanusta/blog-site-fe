@@ -8,3 +8,17 @@
     text-align: center;
     justify-content: center;
   }
+
+.p-menuitem-text{
+    color: #352F44;
+    font-weight: bold !important;
+  }
+
+.p-menuitem-icon{
+    font-weight: bold;
+    color: #352F44;
+}
+.p-link{
+    background: rgb(136, 136, 151);
+    
+}

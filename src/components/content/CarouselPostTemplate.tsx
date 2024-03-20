@@ -39,9 +39,9 @@ export default function CarouselPostTemplate(product) {
               rounded
               style={{ backgroundColor: "#6c757d", borderColor: "#6c757d" }}
               onClick={handleClick}
+              label="Okumaya devam et"
             />
           </div>
-          <div>Okumaya devam et...</div>
           <div> </div>
           <div className="views">Görüntüleme: {product.view}</div>
         </div>

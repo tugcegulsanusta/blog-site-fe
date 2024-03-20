@@ -20,7 +20,8 @@ export default function Login() {
         <title>Login</title>
       </Helmet>
 
-      <div className="flex align-items-center justify-content-center">
+      <div className="flex align-items-center justify-content-center"
+        style={{ "margin": '4%' }}>
         <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
           <div className="text-center mb-5">
             <img
@@ -80,7 +81,7 @@ export default function Login() {
             <Button label="Sign In" icon="pi pi-user" className="w-full" onClick={handleClick} />
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }

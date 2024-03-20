@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Checkbox } from "primereact/checkbox";
 import { Button } from "primereact/button";
@@ -7,7 +7,8 @@ export default function Signup() {
   const [checked, setChecked] = useState<boolean>(false);
 
   return (
-    <div className="flex align-items-center justify-content-center">
+    <div className="flex align-items-center justify-content-center"
+      style={{ "margin": "4%" }}>
       <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
         <div className="text-center mb-5">
           <img
@@ -53,7 +54,7 @@ export default function Signup() {
 
           <div className="flex align-items-center justify-content-between mb-6">
             <div className="flex align-items-center">
-            <Checkbox onChange={e => setChecked(true)} checked={checked}></Checkbox>
+              <Checkbox onChange={e => setChecked(true)} checked={checked}></Checkbox>
               <label htmlFor="rememberme">Remember me</label>
             </div>
           </div>

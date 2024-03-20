@@ -19,3 +19,14 @@
   font-size: smaller;
   color: #413e3f;
 }
+.p-button-label{
+ color: #352F44;
+ font-weight: bold;
+}
+.p-button-icon{
+  color: #352F44;
+ font-weight: bold;
+}
+.views{
+  color: black
+}

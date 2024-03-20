@@ -6,13 +6,13 @@ import { useNavigate } from "react-router-dom";
 import { Dialog } from "primereact/dialog";
 import AddCategoryPopUp from "../category/AddCategoryPopUp.tsx";
 import DeleteCategoryPopUp from "../category/DeleteCategoryPopUp.tsx";
-import user from "../../jsonfiles/user.json"
 import UpdateCategoryPopUp from "../category/UpdateCategoryPopUp.tsx";
 import categoryData from "../../jsonfiles/categories.json"
 import { useLocation } from "react-router-dom";
 import AddPostPopUp from "../post/AddPostPopUp.tsx";
 import { User, Category, Post } from '../../api/Types.tsx'
 import DeletePostPopUp from "../post/DeletePostPopUp.tsx";
+import './style.css'
 
 export default function NavigationBar() {
   const location = useLocation();
@@ -134,11 +134,10 @@ export default function NavigationBar() {
         model={items}
         start={start}
         end={end}
-        className="bg-gray-900 shadow-2"
+        className="bg-gray-600 shadow-2"
         style={{
-          borderRadius: "3rem",
           backgroundImage:
-            "linear-gradient(to right, var(--bluegray-300), var(--bluegray-700))",
+            "linear-gradient(to right, var(--bluegray-300), var(--bluegray-500))",
         }}
       />
       <Dialog
