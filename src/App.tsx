@@ -8,6 +8,7 @@ import BlogCarousel from "./components/content/BlogCarousel.tsx";
 import CategoryStatistics from "./components/statistics/CategoryStatistics.tsx";
 import AccountSetting from './components/user/AccountSettings.tsx'
 import SinglePost from "./components/content/SinglePost.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/category/*" element={<FilteredPostsPage />} />
         <Route path="/post/*" element={<SinglePost />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

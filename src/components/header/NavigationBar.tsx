@@ -13,6 +13,7 @@ import AddPostPopUp from "../post/AddPostPopUp.tsx";
 import { User, Category, Post } from '../../api/Types.tsx'
 import DeletePostPopUp from "../post/DeletePostPopUp.tsx";
 import './style.css'
+import UpdatePostPopUp from "../post/UpdatePostPopUp.tsx";
 
 export default function NavigationBar() {
   const location = useLocation();
@@ -26,7 +27,8 @@ export default function NavigationBar() {
   const [deleteCategoryDialog, setDeleteCategoryDialog] = useState(false);
   const [updateCategoryDialog, setUpdateCategoryDialog] = useState(false);
   const [addPostDialog, setAddPostDialog] = useState(false);
-  const [deletePostDialog, setDeletePostDialog] = useState(false)
+  const [deletePostDialog, setDeletePostDialog] = useState(false);
+  const [updatePostDialog, setUpdatePostDialog] = useState(false);
 
   const [categories, setCategories] = useState<Category[]>(categoryData);
 
@@ -87,7 +89,7 @@ export default function NavigationBar() {
         {
           label: "Blog düzenle",
           icon: "pi pi-pencil",
-          command: () => navigate("/updatePost"),
+          command: () => setUpdatePostDialog(true),
         },
       ],
     },
@@ -178,11 +180,20 @@ export default function NavigationBar() {
 
       <Dialog
         className="dialog"
-        header={<h2 style={{ textAlign: 'center' }}>Gönderi Ekle</h2>}
+        header={<h2 style={{ textAlign: 'center' }}>Gönderi Sil</h2>}
         visible={deletePostDialog}
         onHide={() => setDeletePostDialog(false)}
       >
         <DeletePostPopUp />
+      </Dialog>
+
+      <Dialog
+        className="dialog"
+        header={<h2 style={{ textAlign: 'center' }}>Gönderi Düzenle</h2>}
+        visible={updatePostDialog}
+        onHide={() => setUpdatePostDialog(false)}
+      >
+        <UpdatePostPopUp />
       </Dialog>
     </>
   );

@@ -5,16 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from 'primereact/inputtextarea';
 import './style.css';
 
-const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-            setNewImage(reader.result as string);
-        };
-        reader.readAsDataURL(file);
-    }
-};
+
 
 export default function AddPostPopUp() {
     const [value, setValue] = useState("");

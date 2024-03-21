@@ -15,26 +15,22 @@ export default function CategoryStatistics() {
             datasets: [
                 {
                     label: 'Teknoloji',
-                    backgroundColor: '#451952',
-                    borderColor: documentStyle.getPropertyValue('--gray-600'),
+                    backgroundColor: '#2E4374',
                     data: [80, 73, 80, 81, 56, 55, 40]
                 },
                 {
                     label: 'Bilim',
-                    backgroundColor: '#662549',
-                    borderColor: documentStyle.getPropertyValue('--gray-500'),
+                    backgroundColor: '#4B527E',
                     data: [60, 48, 53, 62, 70, 55, 80]
                 },
                 {
                     label: 'Sağlıklı Yaşam',
-                    backgroundColor: '#AE445A',
-                    borderColor: documentStyle.getPropertyValue('--pink-200'),
+                    backgroundColor: '#7C81AD',
                     data: [28, 48, 40, 19, 86, 27, 90]
                 },
                 {
                     label: 'Seyahat',
-                    backgroundColor: '#F39F5A',
-                    borderColor: documentStyle.getPropertyValue('--green-300'),
+                    backgroundColor: '#E5C3A6',
                     data: [28, 48, 40, 19, 86, 27, 90]
                 }
             ]

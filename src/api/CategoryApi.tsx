@@ -5,12 +5,12 @@ const client = new GraphQLClient('http://localhost:8080/graphql')
 
 async function createCategory(name: string): Promise<Category> {
     const query = `
-     mutation MyMutation { 
+     mutation MyMutation {
         createCategory(name: "${name}") {
-             id 
-             name 
-            } 
-        } 
+             id
+             name
+            }
+        }
     `;
 
     const data = await client.request(query);
